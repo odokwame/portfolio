@@ -3,50 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyHomePage</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Anthony Amable | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Navigation Bar -->
     <nav class="navbar">
-      <div>
-        <!-- logo goes here -->
-        <h1>ACKVIEW</h1>
-      </div>
+      <h1>ACKVIEW</h1>
       <div class="navlinks">
-        <!-- nav links goes here -->
-        <a href="#">About</a>
-        <a href="#">Skill</a>
-        <a href="#">Experience</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
-    <section class="hero-section">
-      <div>
-        <!-- text goes here -->
-        <p class="hero-firstchild">I'm</p>
-        <h1 class="hero-secondchild">Anthony Amable</h1>
-        <h3 class="hero-thirdchild">a junior developer</h3>
-        <button>Download Resume</button>
-        <button>Contact</button>
-      </div>
-      <div class="profile-picture">
-        <!-- image goes here -->
-        <img src="img/head shot (1).png" alt="profile picture" />
-      </div>
-    </section>
-    <section>
-        <div class="skill-section">
-            <p class="learn">Learn About Me</p>
-            <h1 class="mySkill">My Skill Set</h1>
-            <p class="information">
-                <span>As a Junior Web Developer,</span>
-                <span> I have foundational knowledge and hands-on experience</span>
-                <span> in web development, focusing on both front-end and</span>
-                <span>and back-end technologies. My technical skills include:</span>
-            </p>
 
+    <!-- Hero Section -->
+    <section class="hero-section" id="about">
+      <div>
+        <h1>I'm Anthony Amable</h1>
+        <h3>A Junior Web Developer</h3>
+        <div class="hero-buttons">
+          <button class="btn">Download Resume</button>
+          <button class="btn">Contact</button>
         </div>
+      </div>
     </section>
+
+     <!-- Summary Section -->
+     <section class="summary">
+      <h2>Summary</h2>
+      <div class="summary-container">
+        <div>
+          <p>
+            "A Junior Web Developer with a background in electrical and solar PV
+            engineering, business development, and technical project management.
+            With over seven years of experience as a licensed electrical
+            technician, I have honed problem-solving skills that now enhance my
+            approach to web development. My expertise in system installations,
+            troubleshooting, and renewable energy solutions complements my
+            growing proficiency in front-end and back-end technologies. As the
+            youth organizer of the Yiedie Youth Association, I am committed to
+            empowering others through technical education and innovation,
+            bridging the gap between engineering, technology, and business."
+          </p>
+        </div>
+        <div>
+          <img src="img/head shot.jpg" alt="my profilePicture" />
+        </div>
+     </section>
+    </div>
+
+    <!-- Skills Section -->
+    <section class="skill-section" id="skills">
+      <h1>My Skill Set</h1>
+      <div class="skills">
+        <div class="skill-box">
+          <h3>HTML &amp; CSS</h3>
+          <p>Semantic HTML, modern CSS layouts, responsive design.</p>
+        </div>
+        <div class="skill-box">
+          <h3>JavaScript</h3>
+          <p>ES6+ features, DOM manipulation, fetch APIs, and more.</p>
+        </div>
+        <div class="skill-box">
+          <h3>React</h3>
+          <p>Building SPAs, hooks, state management, and more.</p>
+        </div>
+        <div class="skill-box">
+          <h3>Node.js</h3>
+          <p>Express.js, RESTful APIs, npm packages, and backend logic.</p>
+        </div>
+      </div>
+    </section>
+
+   
+
+     <!-- Projects Section -->
+     <section class="projects" id="projects">
+      <h1>Projects</h1>
+      <div class="project-container">
+          <div class="project">
+              <img src="img/project 1.png" alt="Project 1">
+              <h3>Project 1</h3>
+              <p>Brief description of the project.</p>
+          </div>
+          <div class="project">
+              <img src="img/project2.jpg" alt="Project 2">
+              <h3>Project 2</h3>
+              <p>Brief description of the project.</p>
+          </div>
+      </div>
+  </section>
+
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" id="contact">
+      <h1>Contact Me</h1>
+      <form action="#" method="POST">
+          <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+      </form>
+      </section>
+      
+      <!-- Footer / Contact Section -->
+    <footer class="footer" id="contact">
+      <p>
+        Contact me:
+        <a href="mailto:anthonyamable@gmail.com">anthonyamable79@gmail.com</a>
+      </p>
+      <p>&copy; 2025 Anthony Amable. All rights reserved.</p>
+    </footer>
   </body>
 </html>
