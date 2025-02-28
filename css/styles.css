@@ -65,7 +65,7 @@ a {
   align-items: center;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("img/barground\ 2.jpg");
+    url("../img/17973908.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -104,8 +104,9 @@ a {
 
 /* Skills Section */
 .skill-section {
+  background-image: url(../img/barkground\ 2.jpg);
   padding: 80px 60px;
-  background: #fff;
+  /* background: #fff; */
   text-align: center;
 }
 
